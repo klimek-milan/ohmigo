@@ -236,3 +236,27 @@ footer {
     object-fit: contain; /* ← ZMENÍME na contain */
     border-radius: 20px;
 }
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0055aa;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #003366;
+}
+
+.apple-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
