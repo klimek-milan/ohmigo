@@ -122,27 +122,32 @@ header p {
     width: 30%;
     min-width: 260px;
     margin: 20px;
-    padding: 20px;
+    padding: 30px; /* viac priestoru vnútri boxu */
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 85, 170, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1); /* silnejší tieň pre krajší efekt */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* mierne väčší \"lift\" pri hovernutí */
+    box-shadow: 0 8px 16px rgba(0, 85, 170, 0.2);
 }
 
 .feature img {
-    max-width: 80px;
+    max-width: 120px; /* zväčšenie obrázkov */
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px; /* jemné zaoblenie obrázkov */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* jemný tieň pod obrázkom */
 }
 
 .feature h3 {
     color: #003366;
+    font-size: 1.3rem; /* väčšie písmo na názvy */
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .feature p {
