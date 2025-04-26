@@ -85,7 +85,7 @@ header p {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 40px auto;
-    background-color: #e6f0ff; /* veľmi svetlá modrá */
+    background-color: #e6f0ff;
     border-radius: 10px;
     text-align: center;
 }
@@ -154,7 +154,7 @@ footer {
     }
 }
 
-/* Galéria */
+/* Galéria (iPhone mockup verzia) */
 .gallery {
     padding: 40px 20px;
     max-width: 1200px;
@@ -168,47 +168,65 @@ footer {
     font-size: 2rem;
 }
 
-/* Pevný iPhone rám */
-.iphone-frame {
+/* iPhone rám */
+.iphone-mockup {
+    position: relative;
+    width: 300px;
+    height: 620px;
     background: #000;
     border-radius: 40px;
-    padding: 20px;
-    width: 300px;
-    height: 600px;
     margin: 0 auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    position: relative;
 }
 
-/* Slideshow vnútri rámu */
-.slideshow-container {
+/* Dynamic island */
+.iphone-mockup::before {
+    content: "";
     position: absolute;
-    top: 20px;
+    top: 15px;
+    left: 90px;
+    width: 120px;
+    height: 20px;
+    background: #000;
+    border-radius: 10px;
+}
+
+/* Obrazovka iPhonu */
+.iphone-screen {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
     left: 20px;
     right: 20px;
-    bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-/* Každý obrázok */
+/* Slideshow vnútri obrazovky */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .mySlides {
     display: none;
     width: 100%;
     height: 100%;
 }
 
-/* Fade efekt */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
-/* Fade kľúče */
 @keyframes fade {
-    from {opacity: 0.4} 
+    from {opacity: 0.4}
     to {opacity: 1}
 }
 
