@@ -135,11 +135,12 @@ header p {
 }
 
 .feature img {
-    max-width: 120px; /* zväčšenie obrázkov */
-    height: auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    border-radius: 12px; /* jemné zaoblenie obrázkov */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* jemný tieň pod obrázkom */
 }
 
 .feature h3 {
