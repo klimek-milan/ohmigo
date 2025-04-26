@@ -231,6 +231,16 @@ header p {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+.contact-details {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px; /* Obmedzenie šírky ako product-details */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.2); /* rovnaký tieň */
+    text-align: center;
+}
+
 .contact-block {
     margin-bottom: 30px;
 }
