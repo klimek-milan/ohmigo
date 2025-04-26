@@ -261,3 +261,54 @@ footer {
     margin-right: 10px;
     fill: white; /* nastaví bielu farbu pre SVG */
 }
+
+
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product-hunt-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #ff5c5c;
+    border-radius: 8px;
+    color: #ff5c5c;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-hunt-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.product-hunt-button:hover {
+    background-color: #ff5c5c;
+    color: #fff;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.email-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
