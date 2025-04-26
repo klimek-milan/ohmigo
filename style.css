@@ -181,8 +181,8 @@ footer {
 .slides {
     display: flex;
     width: 300%;
-    animation: slide 18s infinite;
-    transition: transform 1s ease-in-out;
+    animation: slide 45s infinite;
+    transition: transform 10s ease-in-out;
 }
 
 .slide {
