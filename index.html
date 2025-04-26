@@ -73,21 +73,21 @@
     </section>
 
     <section class="contact">
-        <h2>Find us on Product Hunt</h2>
-        <a href="https://www.producthunt.com/" target="_blank" class="product-hunt-button">
-            <img src="producthunt-icon.svg" alt="Product Hunt Icon">
-            Find us on Product Hunt
-        </a>
+       <!-- 
+<h2>Find us on Product Hunt</h2>
+<a href="https://www.producthunt.com/" target="_blank" class="product-hunt-button">
+    <img src="producthunt-icon.svg" alt="Product Hunt Icon">
+    Find us on Product Hunt
+</a>
+-->
     
-        <div class="contact-info">
-            <p>Project created by Milan Klimek</p>
-            <p>If you have questions or suggestions, contact me:</p>
-            <p>
-                <img src="gmail-icon.svg" alt="Gmail Icon" class="email-icon">
-                <a href="mailto:milan@example.com">milan@example.com</a>
-            </p>
-            <p>2025 Ohmigo</p>
-        </div>
+<div class="contact-info">
+    <p>Project created by Milan Klimek</p>
+    <p>If you have questions or suggestions, contact me:</p>
+    <p id="email-link"></p>
+    <p>2025 Ohmigo</p>
+</div>
+
     </section>    
 
     <footer>
@@ -113,6 +113,15 @@
         setTimeout(showSlides, 4000); // každé 4 sekundy sa obrázok zmení
     }
     </script>
+
+<script>
+    const user = "klimek1";
+    const domain = "ucm.sk";
+    document.getElementById("email-link").innerHTML = `
+        <img src="gmail-icon.svg" alt="Gmail Icon" class="email-icon">
+        <a href="mailto:${user}@${domain}">${user}@${domain}</a>
+    `;
+</script>
 
 </body>
 </html>
