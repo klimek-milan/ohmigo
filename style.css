@@ -217,15 +217,31 @@ header p {
 }
 
 /* Kontakt */
-.contact-details {
-    background-color: #ffffff;
-    padding: 40px;
-    margin: 50px auto;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
+.contact-block, .contact-info-block {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-block {
+    margin-bottom: 30px;
+}
+
+.contact-info-block {
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-info-block .contact-emails a {
+    color: #0055aa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info-block .contact-emails a:hover {
+    text-decoration: underline;
 }
 
 .contact-form input, .contact-form textarea {
