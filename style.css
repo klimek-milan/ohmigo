@@ -1,133 +1,155 @@
+/* Základné nastavenia */
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f0f8ff; /* jemná modrá */
+    color: #003366; /* tmavomodrý text */
 }
 
+/* Hlavička */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #0055aa;
+    color: #ffffff;
+    padding: 40px 20px;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 5px;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Sekcia s detailmi produktu */
 .product-details {
     display: flex;
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.2);
     align-items: center;
 }
 
 .product-details .image {
     flex: 1;
-    margin-right: 20px;
+    text-align: center;
 }
 
 .product-details .image img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .product-details .description {
     flex: 1;
+    padding: 20px;
 }
 
 .product-details h2 {
     margin-top: 0;
-    color: #333;
+    color: #0055aa;
 }
 
 .product-details ul {
-    list-style: disc;
+    list-style-type: disc;
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 .product-details .cta-button {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #0055aa;
+    color: white;
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .product-details .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #003366;
 }
 
+/* Sekcia vlastností */
 .features {
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #e6f0ff; /* veľmi svetlá modrá */
+    border-radius: 10px;
     text-align: center;
 }
 
 .features h2 {
-    color: #333;
-    margin-bottom: 20px;
+    color: #0055aa;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
-.features .feature {
+.feature {
     display: inline-block;
     width: 30%;
-    margin: 15px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-    text-align: center;
+    min-width: 260px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 85, 170, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.features .feature img {
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
     max-width: 80px;
     height: auto;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    color: #003366;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.features .feature h3 {
+.feature p {
+    font-size: 0.95rem;
     color: #333;
-    margin-top: 0;
-    margin-bottom: 5px;
 }
 
+/* Päta */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0055aa;
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 10px;
+    margin-top: 40px;
 }
 
-/* Responzívne úpravy pre menšie obrazovky */
+/* Responzívne úpravy */
 @media (max-width: 768px) {
     .product-details {
         flex-direction: column;
     }
 
     .product-details .image {
-        margin-right: 0;
         margin-bottom: 20px;
     }
 
-    .features .feature {
+    .feature {
         width: 80%;
-        display: block;
-        margin: 15px auto;
+        margin: 20px auto;
     }
 }
