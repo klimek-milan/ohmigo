@@ -181,8 +181,7 @@ footer {
 .slides {
     display: flex;
     width: 300%;
-    animation: slide 45s infinite;
-    transition: transform 10s ease-in-out;
+    animation: slide 24s infinite;
 }
 
 .slide {
@@ -216,11 +215,13 @@ footer {
 /* Animácia slajdovania */
 @keyframes slide {
     0% { transform: translateX(0%); }
-    25% { transform: translateX(0%); }
-    33% { transform: translateX(-100%); }
-    58% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    91% { transform: translateX(-200%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0%); }
     100% { transform: translateX(0%); }
 }
+
 
