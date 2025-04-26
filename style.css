@@ -25,6 +25,11 @@ header p {
     font-size: 1.2rem;
 }
 
+.app-logo {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Sekcia s detailmi produktu */
 .product-details {
     display: flex;
