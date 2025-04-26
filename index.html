@@ -33,22 +33,22 @@
 
     <section class="gallery">
         <h2>Ohmigo in Action</h2>
-        <div class="slider">
-            <div class="slide-track">
-                <div class="slide">
-                    <div class="iphone-frame">
-                        <img src="screenshot1.png" alt="Ohmigo Screenshot 1">
-                    </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="iphone-frame">
+                    <img src="screenshot1.png" alt="Ohmigo Screenshot 1">
                 </div>
-                <div class="slide">
-                    <div class="iphone-frame">
-                        <img src="screenshot2.png" alt="Ohmigo Screenshot 2">
-                    </div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="iphone-frame">
+                    <img src="screenshot2.png" alt="Ohmigo Screenshot 2">
                 </div>
-                <div class="slide">
-                    <div class="iphone-frame">
-                        <img src="screenshot3.png" alt="Ohmigo Screenshot 3">
-                    </div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="iphone-frame">
+                    <img src="screenshot3.png" alt="Ohmigo Screenshot 3">
                 </div>
             </div>
         </div>
@@ -79,3 +79,23 @@
 
 </body>
 </html>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+    
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+    
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4000); // Zmena každých 4 sekundy
+    }
+    </script>
