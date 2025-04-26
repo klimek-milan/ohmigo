@@ -10,8 +10,10 @@
 <body>
 
     <header>
-        <img src="logo.png" alt="Ohmigo Logo" class="app-logo" style="height: 80px;">
-        <h1>Ohmigo</h1>
+        <div class="header-content">
+            <img src="logo.png" alt="Ohmigo Logo" class="app-logo">
+            <h1>Ohmigo</h1>
+        </div>
         <p>The smart and effortless way to decode resistor color codes and calculate resistance values.</p>
     </header>
 
@@ -75,7 +77,7 @@
     </section>
 
     
-    <section class="contact">
+    <section class="find-us">
        <!-- 
 <h2>Find us on Product Hunt</h2>
 <a href="https://www.producthunt.com/" target="_blank" class="product-hunt-button">
@@ -83,28 +85,29 @@
     Find us on Product Hunt
 </a>
 -->
-
-<form action="mailto:klimek1@ucm.sk" method="post" enctype="text/plain" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
-    <button type="submit">Send</button>
-</form>
-
-<div class="contact-info">
-    <p>Project created by Milan Klimek</p>
-    <p>If you have questions or suggestions, contact me:</p>
-    <p style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0055aa" viewBox="0 0 24 24">
-            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-        </svg>
-        <span id="email-link"></span>
-    </p>
-    <p>2025 Ohmigo</p>
-</div>
-
-
     </section>    
+
+    <section class="contact-details">
+        <h2>Contact</h2>
+        <form action="mailto:klimek1@ucm.sk" method="post" enctype="text/plain" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    
+        <div class="contact-info">
+            <p>Project created by Milan Klimek</p>
+            <p>If you have questions or suggestions, contact me:</p>
+            <p style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0055aa" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <span id="email-link"></span>
+            </p>
+            <p>2025 Ohmigo</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Ohmigo App - Created by Milan Klimek</p>

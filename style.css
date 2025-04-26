@@ -25,9 +25,15 @@ header p {
     font-size: 1.2rem;
 }
 
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .app-logo {
-    display: block;
-    margin: 0 auto;
+    height: 60px;
 }
 
 /* Sekcia s detailmi produktu */
@@ -70,8 +76,9 @@ header p {
     margin-bottom: 20px;
 }
 
-.product-details .cta-button {
-    display: inline-block;
+.cta-button {
+    display: inline-flex;
+    align-items: center;
     background-color: #0055aa;
     color: white;
     padding: 12px 24px;
@@ -79,10 +86,19 @@ header p {
     border-radius: 6px;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-.product-details .cta-button:hover {
+.cta-button:hover {
     background-color: #003366;
+}
+
+.apple-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
 }
 
 /* Sekcia vlastností */
@@ -134,46 +150,7 @@ header p {
     color: #333;
 }
 
-/* Päta */
-footer {
-    background-color: #0055aa;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 10px;
-    margin-top: 40px;
-}
-
-/* Responzívne úpravy */
-@media (max-width: 768px) {
-    .product-details {
-        flex-direction: column;
-    }
-
-    .product-details .image {
-        margin-bottom: 20px;
-    }
-
-    .feature {
-        width: 80%;
-        margin: 20px auto;
-    }
-}
-
-/* Galéria (iPhone mockup verzia) */
-.gallery {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-.gallery h2 {
-    color: #0055aa;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-/* iPhone rám */
+/* iPhone mockup */
 .iphone-mockup {
     position: relative;
     width: 300px;
@@ -185,7 +162,6 @@ footer {
     overflow: hidden;
 }
 
-/* Dynamic island */
 .iphone-mockup::before {
     content: "";
     position: absolute;
@@ -197,7 +173,6 @@ footer {
     border-radius: 10px;
 }
 
-/* Obrazovka iPhonu */
 .iphone-screen {
     position: absolute;
     top: 50px;
@@ -212,7 +187,6 @@ footer {
     justify-content: center;
 }
 
-/* Slideshow vnútri obrazovky */
 .slideshow-container {
     position: relative;
     width: 100%;
@@ -238,71 +212,42 @@ footer {
 .slideshow-container img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* ← ZMENÍME na contain */
+    object-fit: contain;
     border-radius: 20px;
 }
 
-.cta-button {
-    display: inline-flex;
-    align-items: center;
+/* Kontakt */
+.contact-details {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
     background-color: #0055aa;
     color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.cta-button:hover {
-    background-color: #003366;
-}
-
-.apple-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    fill: white; /* nastaví bielu farbu pre SVG */
-}
-
-
-.contact {
-    text-align: center;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.product-hunt-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: 2px solid #ff5c5c;
+    border: none;
     border-radius: 8px;
-    color: #ff5c5c;
-    text-decoration: none;
-    font-weight: bold;
-    margin-bottom: 30px;
-    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
 }
 
-.product-hunt-button img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.product-hunt-button:hover {
-    background-color: #ff5c5c;
-    color: #fff;
+.contact-form button:hover {
+    background-color: #003f80;
 }
 
 .contact-info p {
@@ -311,9 +256,27 @@ footer {
     font-size: 1rem;
 }
 
-.email-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
+/* Päta */
+footer {
+    background-color: #0055aa;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+}
+
+/* Responzívne úpravy */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+    }
+
+    .product-details .image {
+        margin-bottom: 20px;
+    }
+
+    .feature {
+        width: 80%;
+        margin: 20px auto;
+    }
 }
