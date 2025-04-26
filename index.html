@@ -2,10 +2,99 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Ohmigo - Výpočet odporu z farebných pásikov</title>
+    <title>Ohmigo - Resistor Decoder App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #218838;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Vitajte na stránke aplikácie Ohmigo!</h1>
-    <p>Jednoduchý výpočet odporu na základe farieb.</p>
+
+<header>
+    <h1>Ohmigo</h1>
+    <p>The easiest way to decode resistor values from color bands</p>
+</header>
+
+<main>
+    <section>
+        <h2>About the App</h2>
+        <p>Ohmigo is a simple and intuitive mobile application designed to calculate the resistance of electronic resistors based on their color bands. With camera integration and manual selection, you can easily identify resistor values anytime, anywhere.</p>
+    </section>
+
+    <section>
+        <h2>Screenshot</h2>
+        <img src="screenshot_appky.png" alt="Screenshot of Ohmigo App">
+    </section>
+
+    <section>
+        <h2>Download</h2>
+        <p>Click the button below to download the app:</p>
+        <a class="button" href="Ohmigo.ipa" download>Download Ohmigo</a>
+    </section>
+
+    <section>
+        <h2>Last Update</h2>
+        <p>April 26, 2025</p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Milan Klimek | Ohmigo Project
+</footer>
+
 </body>
 </html>
