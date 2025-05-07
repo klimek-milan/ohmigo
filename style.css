@@ -199,6 +199,39 @@ header p {
     justify-content: center;
 }
 
+.iphone-frame {
+    background-image: url("iphone_frame.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px; /* podľa rámika */
+    height: 620px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 60px;    /* upraviť podľa rámika */
+    left: 20px;
+    width: 260px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img.in-frame {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
 .slideshow-container {
     position: relative;
     width: 100%;
