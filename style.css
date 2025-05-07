@@ -212,8 +212,8 @@ header p {
 
 .slideshow-container {
     position: absolute;
-    top: 40px;    /* upraviť podľa rámika */
-    left: 20px;
+    top: 20px;    /* upraviť podľa rámika */
+    left: 30px;
     width: 260px;
     height: 500px;
     overflow: hidden;
