@@ -34,6 +34,7 @@ header p {
 
 .app-logo {
     height: 60px;
+    border-radius: 12px;
 }
 
 /* Sekcia s detailmi produktu */
