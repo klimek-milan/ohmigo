@@ -212,7 +212,7 @@ header p {
 
 .slideshow-container {
     position: absolute;
-    top: 60px;    /* upraviť podľa rámika */
+    top: 40px;    /* upraviť podľa rámika */
     left: 20px;
     width: 260px;
     height: 500px;
@@ -221,27 +221,27 @@ header p {
 
 .mySlides {
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
 }
 
 .mySlides img.in-frame {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     object-fit: contain;
     border-radius: 10px;
 }
 
 .slideshow-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
 }
 
 .mySlides {
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
 }
 
 .fade {
