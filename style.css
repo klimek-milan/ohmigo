@@ -390,3 +390,10 @@ footer {
 .back-button:hover {
     background-color: #003f80;
 }
+
+.back-button.active {
+    background-color: #a8c6e8; /* jemnejšia modrá pre označenie aktívnej položky */
+    color: #003366;
+    cursor: default;
+    pointer-events: none;
+}
