@@ -351,3 +351,19 @@ footer {
         margin: 20px auto;
     }
 }
+
+.video-right {
+    float: right;
+    width: 45%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .video-right {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
