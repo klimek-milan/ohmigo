@@ -367,3 +367,32 @@ footer {
       margin-left: 0;
     }
   }
+
+  .main-nav {
+    background-color: #e6f0ff;
+    padding: 10px 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 85, 170, 0.1);
+    margin-bottom: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    color: #0055aa;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
