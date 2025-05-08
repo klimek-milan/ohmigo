@@ -397,3 +397,11 @@ footer {
     cursor: default;
     pointer-events: none;
 }
+
+.disabled-link {
+    background-color: #dddddd;
+    color: #888888;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+}
