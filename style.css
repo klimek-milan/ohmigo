@@ -3,8 +3,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* jemná modrá */
-    color: #003366; /* tmavomodrý text */
+    background-color: #f0f8ff;
+    /* jemná modrá */
+    color: #003366;
+    /* tmavomodrý text */
 }
 
 /* Hlavička */
@@ -51,8 +53,10 @@ header p {
 }
 
 .product-details ul li {
-    line-height: 1.8; /* väčší riadkový rozostup */
-    margin-bottom: 10px; /* medzera medzi jednotlivými bodmi */
+    line-height: 1.8;
+    /* väčší riadkový rozostup */
+    margin-bottom: 10px;
+    /* medzera medzi jednotlivými bodmi */
 }
 
 .product-details .image {
@@ -128,15 +132,18 @@ header p {
     width: 30%;
     min-width: 260px;
     margin: 20px;
-    padding: 30px; /* viac priestoru vnútri boxu */
+    padding: 30px;
+    /* viac priestoru vnútri boxu */
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1); /* silnejší tieň pre krajší efekt */
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1);
+    /* silnejší tieň pre krajší efekt */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
-    transform: translateY(-8px); /* mierne väčší \"lift\" pri hovernutí */
+    transform: translateY(-8px);
+    /* mierne väčší \"lift\" pri hovernutí */
     box-shadow: 0 8px 16px rgba(0, 85, 170, 0.2);
 }
 
@@ -151,7 +158,8 @@ header p {
 
 .feature h3 {
     color: #003366;
-    font-size: 1.3rem; /* väčšie písmo na názvy */
+    font-size: 1.3rem;
+    /* väčšie písmo na názvy */
     margin-top: 10px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -204,7 +212,8 @@ header p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 300px; /* podľa rámika */
+    width: 300px;
+    /* podľa rámika */
     height: 620px;
     position: relative;
     margin: 0 auto;
@@ -212,7 +221,8 @@ header p {
 
 .slideshow-container {
     position: absolute;
-    top: 10px;    /* upraviť podľa rámika */
+    top: 10px;
+    /* upraviť podľa rámika */
     left: 50px;
     width: 260px;
     height: 500px;
@@ -250,8 +260,13 @@ header p {
 }
 
 @keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .slideshow-container img {
@@ -262,7 +277,8 @@ header p {
 }
 
 /* Kontakt */
-.contact-block, .contact-info-block {
+.contact-block,
+.contact-info-block {
     margin: 20px 0;
     padding: 20px;
     background-color: #f9f9f9;
@@ -274,9 +290,11 @@ header p {
     background-color: #ffffff;
     padding: 40px 20px;
     margin: 40px auto;
-    max-width: 1200px; /* Obmedzenie šírky ako product-details */
+    max-width: 1200px;
+    /* Obmedzenie šírky ako product-details */
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.2); /* rovnaký tieň */
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.2);
+    /* rovnaký tieň */
     text-align: center;
 }
 
@@ -299,7 +317,8 @@ header p {
     text-decoration: underline;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 80%;
     margin: 10px 0;
     padding: 10px;
@@ -358,17 +377,17 @@ footer {
     margin-left: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .video-right {
-      float: none;
-      width: 100%;
-      margin-left: 0;
+        float: none;
+        width: 100%;
+        margin-left: 0;
     }
-  }
+}
 
-  .main-nav {
+.main-nav {
     background-color: #e6f0ff;
     padding: 15px 30px;
     box-shadow: 0 2px 6px rgba(0, 85, 170, 0.1);
@@ -392,7 +411,8 @@ footer {
 }
 
 .back-button.active {
-    background-color: #a8c6e8; /* jemnejšia modrá pre označenie aktívnej položky */
+    background-color: #a8c6e8;
+    /* jemnejšia modrá pre označenie aktívnej položky */
     color: #003366;
     cursor: default;
     pointer-events: none;
@@ -457,21 +477,25 @@ footer {
     width: 30%;
     min-width: 260px;
     margin: 20px;
-    padding: 30px; /* viac priestoru vnútri boxu */
+    padding: 30px;
+    /* viac priestoru vnútri boxu */
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1); /* silnejší tieň pre krajší efekt */
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1);
+    /* silnejší tieň pre krajší efekt */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .find-us-product:hover {
-    transform: translateY(-8px); /* mierne väčší \"lift\" pri hovernutí */
+    transform: translateY(-8px);
+    /* mierne väčší \"lift\" pri hovernutí */
     box-shadow: 0 8px 16px rgba(0, 85, 170, 0.2);
 }
 
 .find-us-product h3 {
     color: #003366;
-    font-size: 1.3rem; /* väčšie písmo na názvy */
+    font-size: 1.3rem;
+    /* väčšie písmo na názvy */
     margin-top: 10px;
     margin-bottom: 15px;
     font-weight: bold;
