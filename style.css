@@ -452,7 +452,7 @@ footer {
     font-size: 2rem;
 }
 
-.find-us {
+.find-us-product {
     display: inline-block;
     width: 30%;
     min-width: 260px;
@@ -464,12 +464,12 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.find-us:hover {
+.find-us-product:hover {
     transform: translateY(-8px); /* mierne väčší \"lift\" pri hovernutí */
     box-shadow: 0 8px 16px rgba(0, 85, 170, 0.2);
 }
 
-.find-us h3 {
+.find-us-product h3 {
     color: #003366;
     font-size: 1.3rem; /* väčšie písmo na názvy */
     margin-top: 10px;
@@ -477,7 +477,7 @@ footer {
     font-weight: bold;
 }
 
-.find-us p {
+.find-us-product p {
     font-size: 0.95rem;
     color: #333;
 }
