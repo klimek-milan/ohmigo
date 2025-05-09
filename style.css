@@ -469,15 +469,6 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 85, 170, 0.2);
 }
 
-.find-us img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-}
-
 .find-us h3 {
     color: #003366;
     font-size: 1.3rem; /* väčšie písmo na názvy */
