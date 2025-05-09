@@ -436,3 +436,57 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+
+.find-us {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #e6f0ff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.find-us h2 {
+    color: #0055aa;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.find-us {
+    display: inline-block;
+    width: 30%;
+    min-width: 260px;
+    margin: 20px;
+    padding: 30px; /* viac priestoru vnútri boxu */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1); /* silnejší tieň pre krajší efekt */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.find-us:hover {
+    transform: translateY(-8px); /* mierne väčší \"lift\" pri hovernutí */
+    box-shadow: 0 8px 16px rgba(0, 85, 170, 0.2);
+}
+
+.find-us img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.find-us h3 {
+    color: #003366;
+    font-size: 1.3rem; /* väčšie písmo na názvy */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.find-us p {
+    font-size: 0.95rem;
+    color: #333;
+}
