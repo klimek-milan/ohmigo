@@ -505,3 +505,17 @@ footer {
     font-size: 0.95rem;
     color: #333;
 }
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #ff6600;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.testimonials footer {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}S
