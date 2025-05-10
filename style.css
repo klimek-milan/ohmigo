@@ -516,7 +516,7 @@ footer {
     text-align: center;
 }
 
-.testimonials footer {
+.testimonials .section-title {
     color: #0055aa;
     font-size: 2rem;
     margin-bottom: 30px;
