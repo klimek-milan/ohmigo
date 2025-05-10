@@ -1,5 +1,5 @@
 # ohmigo
 A basic website showcasing the Ohmigo app, a tool for calculating resistor values based on color bands
 git add . 
-git commit -m "Zmena 62"
+git commit -m "Zmena 66"
 git push 
