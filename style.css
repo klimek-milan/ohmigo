@@ -538,7 +538,7 @@ footer {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #f0f8ff;
+    background: #0055aa;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,7 +548,10 @@ footer {
 
 .testimonial-avatar i {
     font-size: 40px;
-    color: #f0f8ff;
+    color: #f0f8ff; /* jemná svetlá modrá */
+    background-color: #0055aa; /* tmavomodrý podklad pre kontrast */
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .testimonial-quote {
