@@ -49,3 +49,8 @@ This is a school project by Milan Klimek.
 ## 📄 License
 
 MIT License
+
+
+git add .
+git commit -m "Zmena 72"
+git push
